@@ -14,7 +14,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -22,6 +21,9 @@ public class Product {
     private String productDescription;
     private String productViews;
     private String productPrice;
+    private boolean productAvailable;
+    private String productCategory;
+    private int stockQuantity;
     private String imageName;
     private String imageType;
     @Lob
