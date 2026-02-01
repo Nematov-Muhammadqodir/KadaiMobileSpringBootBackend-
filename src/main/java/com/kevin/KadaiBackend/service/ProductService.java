@@ -17,7 +17,8 @@ public class ProductService {
     private ProductRepo productRepo;
 
     public List<Product> getAllProducts() {
-        return productRepo.findAll();
+        List<Product> products = productRepo.findAll();
+        return products;
     }
 
     public Product addOrUpdateProduct(Product product, MultipartFile image) throws IOException {
